@@ -15,4 +15,10 @@
 
     <string name="dialog_datos_colegio">I.E.S Al-Ándalus\n2º DAM - Horas de Libre Configuración\nProfesor: Juan Pedro Martinez</string>
     <string name="nombre_autor">Enrique Octavio Fernández Chacón</string>
+
+    <string name="mainactivity_titulo">HOTELES DE ALMERIA</string>
+
+    <string name="hotel_barcelo">BARCELÓ CABO DE GATA</string>
+    <string name="hotel_gran">GRAN HOTEL ALMERÍA</string>
+    <string name="hotel_elba">HOTEL ELBA ALMERÍA</string>
 </resources>

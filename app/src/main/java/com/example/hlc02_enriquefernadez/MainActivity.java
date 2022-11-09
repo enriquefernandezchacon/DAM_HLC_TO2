@@ -1,19 +1,58 @@
 package com.example.hlc02_enriquefernadez;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.app.Dialog;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private CardView cardHotelBarcelo;
+    private CardView cardHotelElba;
+    private CardView cardGranHotel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        cardGranHotel = findViewById(R.id.cardHotelGranHotel);
+        cardHotelBarcelo = findViewById(R.id.cardHotelBarcelo);
+        cardHotelElba = findViewById(R.id.cardHotelElba);
+
+        asignarEventosClick();
+    }
+
+    private void asignarEventosClick(){
+        cardHotelBarcelo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(view.getContext(), "Hotel Barcelo", Toast.LENGTH_SHORT).show();
+                Intent activityBarcelo = new Intent (view.getContext(), HotelActivity.class);
+                startActivity(activityBarcelo);
+            }
+        });
+
+        cardGranHotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(view.getContext(), "Hotel Barcelo", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        cardHotelElba.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(view.getContext(), "Hotel Barcelo", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     //METODO PARA MOSTRAR Y OCULTAR MENU
