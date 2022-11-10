@@ -21,4 +21,29 @@
     <string name="hotel_barcelo">BARCELÓ CABO DE GATA</string>
     <string name="hotel_gran">GRAN HOTEL ALMERÍA</string>
     <string name="hotel_elba">HOTEL ELBA ALMERÍA</string>
+
+    <string name="boton_mas_informacion">SOLICITAR INFORMACION\n PARA RESeRVAR</string>
+
+    <string name="telefono1">950123456</string>
+    <string name="telefono2">950123457</string>
+    <string name="telefono3">950123458</string>
+
+    <string name="latitud1">36.838468518455876</string>
+    <string name="latitud2">36.834869660154624</string>
+    <string name="latitud3">36.85564725821251</string>
+    <string name="longitud1">-2.3234859731290864</string>
+    <string name="longitud2">-2.4635306221976685</string>
+    <string name="longitud3">-2.4455958019647106</string>
+
+    <string name="sonido1">sonido_barcelo</string>
+    <string name="sonido2">sonido_gran_hotel</string>
+    <string name="sonido3">sonido_elba</string>
+
+    <string name="fotoHotel1">barcelo</string>
+    <string name="fotoHotel2">gran_hotel</string>
+    <string name="fotoHotel3">elba</string>
+
+    <string name="video_hotel_gran_hotel">fpX3OQGt6Mg</string>
+    <string name="video_hotel_elba">bWSYgzfWd8U</string>
+    <string name="video_hotel_barcelo">8aG3iDXFB4w</string>
 </resources>

@@ -1,10 +1,11 @@
 package com.example.hlc02_enriquefernadez;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class InformacionActivity extends AppCompatActivity {
 
@@ -13,11 +14,8 @@ public class InformacionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_informacion);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent volverAHotel = new Intent(this, HotelActivity.class);
-        startActivity(volverAHotel);
+        Intent intent = getIntent();
+        TextView titulo = findViewById(R.id.tvTitulo);
+        titulo.setText(intent.getStringExtra("TITULO_HOTEL"));
     }
 }

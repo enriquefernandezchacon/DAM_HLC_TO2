@@ -1,8 +1,5 @@
 package com.example.hlc02_enriquefernadez;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -11,6 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,23 +34,45 @@ public class MainActivity extends AppCompatActivity {
         cardHotelBarcelo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), "Hotel Barcelo", Toast.LENGTH_SHORT).show();
-                Intent activityBarcelo = new Intent (view.getContext(), HotelActivity.class);
-                startActivity(activityBarcelo);
+                Intent intent = new Intent (view.getContext(), HotelActivity.class);
+                intent.putExtra("TITULO_HOTEL", getString(R.string.hotel_barcelo));
+                intent.putExtra("IMAGEN_HOTEL", getString(R.string.fotoHotel1));
+                intent.putExtra("AUDIO_HOTEL", getString(R.string.sonido1));
+                intent.putExtra("MAPA_HOTEL_LATITUD", getString(R.string.latitud1));
+                intent.putExtra("MAPA_HOTEL_LONGITUD", getString(R.string.longitud1));
+                intent.putExtra("TELEFONO_HOTEL", getString(R.string.telefono1));
+                intent.putExtra("VIDEO_HOTEL", getString(R.string.video_hotel_barcelo));
+                startActivity(intent);
             }
         });
 
         cardGranHotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), "Hotel Barcelo", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent (view.getContext(), HotelActivity.class);
+                intent.putExtra("TITULO_HOTEL", getString(R.string.hotel_gran));
+                intent.putExtra("IMAGEN_HOTEL", getString(R.string.fotoHotel2));
+                intent.putExtra("AUDIO_HOTEL", getString(R.string.sonido2));
+                intent.putExtra("MAPA_HOTEL_LATITUD", getString(R.string.latitud2));
+                intent.putExtra("MAPA_HOTEL_LONGITUD", getString(R.string.longitud2));
+                intent.putExtra("TELEFONO_HOTEL", getString(R.string.telefono2));
+                intent.putExtra("VIDEO_HOTEL", getString(R.string.video_hotel_gran_hotel));
+                startActivity(intent);
             }
         });
 
         cardHotelElba.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), "Hotel Barcelo", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent (view.getContext(), HotelActivity.class);
+                intent.putExtra("TITULO_HOTEL", getString(R.string.hotel_elba));
+                intent.putExtra("IMAGEN_HOTEL", getString(R.string.fotoHotel3));
+                intent.putExtra("AUDIO_HOTEL", getString(R.string.sonido3));
+                intent.putExtra("MAPA_HOTEL_LATITUD", getString(R.string.latitud3));
+                intent.putExtra("MAPA_HOTEL_LONGITUD", getString(R.string.longitud3));
+                intent.putExtra("TELEFONO_HOTEL", getString(R.string.telefono3));
+                intent.putExtra("VIDEO_HOTEL", getString(R.string.video_hotel_elba));
+                startActivity(intent);
             }
         });
     }
