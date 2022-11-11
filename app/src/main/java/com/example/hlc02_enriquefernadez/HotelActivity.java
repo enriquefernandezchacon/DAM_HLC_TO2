@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -33,16 +32,22 @@ public class HotelActivity extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
 
     private AbstractYouTubePlayerListener listenerYoutube;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Toast.makeText(HotelActivity.this, "Created", Toast.LENGTH_SHORT).show();
         setContentView(R.layout.activity_hotel);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         intent = getIntent();
         gestionarDatos();
 
         asignarEventosClick();
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        stopSonido();
     }
 
     private void asignarEventosClick(){

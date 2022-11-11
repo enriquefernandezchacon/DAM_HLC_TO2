@@ -22,7 +22,7 @@
     <string name="hotel_gran">GRAN HOTEL ALMERÍA</string>
     <string name="hotel_elba">HOTEL ELBA ALMERÍA</string>
 
-    <string name="boton_mas_informacion">SOLICITAR INFORMACION\n PARA RESeRVAR</string>
+    <string name="boton_mas_informacion">SOLICITAR INFORMACION\n PARA RESERVAR</string>
 
     <string name="telefono1">950123456</string>
     <string name="telefono2">950123457</string>
@@ -46,4 +46,16 @@
     <string name="video_hotel_gran_hotel">fpX3OQGt6Mg</string>
     <string name="video_hotel_elba">bWSYgzfWd8U</string>
     <string name="video_hotel_barcelo">8aG3iDXFB4w</string>
+
+    <string name="reserva_hint_nombre">Nombre</string>
+    <string name="reserva_hint_apellidos">Apellidos</string>
+    <string name="reserva_hint_email">Email</string>
+    <string name="reserva_hint_fecha">Fecha de la reserva</string>
+    <string name="reserva_hint_dias">Dias de estancia</string>
+    <string name="reserva_hint_mascota">Mascotas</string>
+    <string name="reserva_hint_consulta">Introduzca aquí su consulta...</string>
+    <string name="reserva_info">Formulario para solicitar información de una reserva</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="boton_enviar">ENVIAR</string>
 </resources>
