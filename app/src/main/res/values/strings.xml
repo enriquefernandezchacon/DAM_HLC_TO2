@@ -58,4 +58,7 @@
     <string name="si">Sí</string>
     <string name="no">No</string>
     <string name="boton_enviar">ENVIAR</string>
+
+    <string name="descripcion_foto_hotel">Foto del hotel</string>
+    <string name="descripcion_icono_estudio">Esto e sun trabajo de clase</string>
 </resources>

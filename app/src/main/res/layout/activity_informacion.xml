@@ -244,7 +244,7 @@
             app:layout_constraintTop_toBottomOf="@+id/checkBoxSi" />
 
         <EditText
-            android:id="@+id/textArea"
+            android:id="@+id/etConsulta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="26dp"
@@ -273,7 +273,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textArea"/>/>
+            app:layout_constraintTop_toBottomOf="@+id/etConsulta"/>/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

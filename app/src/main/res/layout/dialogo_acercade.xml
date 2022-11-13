@@ -8,7 +8,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:src="@drawable/ic_baseline_school_24"/>
+        android:src="@drawable/ic_baseline_school_24"
+        android:contentDescription="@string/descripcion_icono_estudio" />
 
     <LinearLayout
         android:layout_width="match_parent"
